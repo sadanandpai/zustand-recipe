@@ -5,8 +5,8 @@ function Controls() {
   console.log("Render: Controls Comp");
 
   const [increment, decrement] = useCounterStore(
-    (state) => [state.increment, state.decrement],
-    shallow // without shallow rerendering happens
+    (state) => [state.increment, state.decrement]
+    // shallow // without shallow rerendering happens
   );
 
   return (
